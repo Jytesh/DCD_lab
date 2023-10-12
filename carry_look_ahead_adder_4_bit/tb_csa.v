@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module CSA_tb;
+module tb_cla;
   reg [3:0]A, B; 
   reg Cin;
   wire [3:0] S;
@@ -31,11 +31,11 @@ module CSA_tb;
   
   assign add = {Cout, S};
   initial begin
-    $monitor("A = %b: B = %b, Cin = %b --> S = %b, Cout = %b, Addition = %0d", A, B, Cin, S, Cout, add);
-    A = 1; B = 0; Cin = 0; #3;
-    A = 2; B = 4; Cin = 1; #3;
-    A = 4'hb; B = 4'h6; Cin = 0; #3;
-    A = 5; B = 3; Cin = 1;
+    A = 1; B = 0; Cin = 0; #10;
+    A = 2; B = 4; Cin = 1; #10;
+    A = 4'hb; B = 4'h6; Cin = 0; #10;
+    A = 5; B = 3; Cin = 1; #10
+    $finish;
   end
 endmodule
 
