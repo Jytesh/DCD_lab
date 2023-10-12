@@ -25,3 +25,8 @@ Currently the repository houses the following experiments
 - Files that are required as dependencies must be added to the folder, all modules except the main module must be in this file.
 - Add jpg image of RTL and waveform with same name as the main file, suffix with rtl for RTL schematic image.
 - Make sure to change the background of the waveform to white and text to black before taking the screenshots.
+
+
+# Contributors
+- [Mubashir](https://github.com/forbiddenvelocity)
+- [Jytesh](https://github.com/jytesh)
