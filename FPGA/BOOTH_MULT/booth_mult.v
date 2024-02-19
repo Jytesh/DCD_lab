@@ -13,9 +13,8 @@ module booth_mult(A, B, PROD);
            for (i = 0; i < 4; i = i + 1) begin
                TMP = {A[i], E1};
                case (TMP)
-                   2'd2 : PROD[7 : 4] = PROD[7 : 4] - B;
-                   2'd1 : PROD[7 : 4] = PROD[7 : 4] + B;
-                   default : begin end
+                   2'b10: PROD[7 : 4] = PROD[7 : 4] - B;
+                   2'b01 : PROD[7 : 4] = PROD[7 : 4] + B;
                endcase
                PROD = PROD >> 1;
                PROD[7] = PROD[6];
