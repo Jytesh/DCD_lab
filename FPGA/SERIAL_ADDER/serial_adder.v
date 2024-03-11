@@ -11,7 +11,7 @@ module serial_adder(
                 COUT = 0;
             end else begin
                 SUM = A ^ B ^ COUT;
-                COUT = ( A & B ) + ( B & COUT ) + ( B & COUT );
+                COUT = ( A & B ) + ( B & COUT ) + ( A & COUT );
                  
             end
         end 
